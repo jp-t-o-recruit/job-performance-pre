@@ -1,11 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
-
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { DataService } from '../../content/data.service';
 
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
@@ -23,7 +18,7 @@ export class RootContainerComponent implements OnInit {
 
   preload;
 
-  constructor(private data: DataService, private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) { }
 
   
 
@@ -32,7 +27,8 @@ export class RootContainerComponent implements OnInit {
     // this.preload = this.http.get('https://node-hnapi.herokuapp.com/news');
 
     this.feed = this.route.data.switchMap(data => {
-      return this.data.getFeed(data.feed);
+      // return this.data.getFeed(data.feed);
+      return null;
     });
 
     this.pages$ = this.feed.map(arr => Math.floor(arr.length / 30) + 1);

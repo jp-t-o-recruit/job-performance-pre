@@ -10,12 +10,12 @@ import { LoginModule } from './login/login.module';
     // CommonModule,
     // FormsModule,
     // RouterModule
-    loginModule
+    LoginModule
   ],
   declarations: [
   ],
   exports: [
-    loginModule
+    LoginModule
   ]
 })
 export class ContentModule { }
