@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { UiModule } from './ui/ui.module';
 import { HelloComponent } from './hello.component.ts';
+import { LoginComponent } from './content/login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent
+    HelloComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
