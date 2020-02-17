@@ -10,6 +10,7 @@
     "@angular/http": "7.2.16",
     "@angular/platform-browser": "8.2.14",
     "@angular/platform-browser-dynamic": "8.2.14",
+    "@angular/pwa": "^0.900.2",
     "@angular/router": "8.2.14",
     "@angular/service-worker": "^9.0.1",
     "bootstrap": "4.4.1",
