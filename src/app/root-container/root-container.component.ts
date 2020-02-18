@@ -1,7 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-
 import { BehaviorSubject, Observable } from 'rxjs';
-
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
@@ -19,8 +17,6 @@ export class RootContainerComponent implements OnInit {
   preload;
 
   constructor(private route: ActivatedRoute) { }
-
-  
 
   ngOnInit() {
 

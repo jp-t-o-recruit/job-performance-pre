@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
-import { RootContainerComponent } from './root-container/root-container.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { LabelInputComponent } from './label-input/label-input.component';
 
@@ -11,13 +10,11 @@ import { LabelInputComponent } from './label-input/label-input.component';
   imports: [CommonModule, FormsModule, RouterModule],
   declarations: [
     LoadingSpinnerComponent,
-    RootContainerComponent,
     TopNavComponent,
     LabelInputComponent
   ],
   exports: [
     LoadingSpinnerComponent,
-    RootContainerComponent,
     TopNavComponent,
     LabelInputComponent
   ]

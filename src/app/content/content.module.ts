@@ -5,22 +5,18 @@ import { NgModule } from '@angular/core';
 import { LoginModule } from './login/login.module';
 import { ProductionSummaryComponent } from './production-summary/production-summary.component';
 import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [
-  { path: '', redirectTo: 'production-summary', pathMatch: 'full' },
-  { path: 'production-summary', component: ProductionSummaryComponent},
-];
-
+import { PwaQueueFormComponent } from './pwa-queue-form/pwa-queue-form.component';
 
 @NgModule({
   imports: [
     // CommonModule,
     // FormsModule,
     LoginModule,
-    RouterModule.forChild(routes)
+    // RouterModule.forChild(routes)
   ],
   declarations: [
-    ProductionSummaryComponent
+    ProductionSummaryComponent,
+    PwaQueueFormComponent
   ],
   exports: [
     LoginModule,

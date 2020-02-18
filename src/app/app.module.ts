@@ -9,11 +9,12 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { UiModule } from './ui/ui.module';
 import { ContentModule } from './content/content.module';
-
+import { RootContainerComponent } from './root-container/root-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    RootContainerComponent
   ],
   imports: [
     AppRoutingModule,
