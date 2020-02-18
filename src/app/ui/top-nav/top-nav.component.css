@@ -1,32 +1,11 @@
 .navbar {
-    background: #fff;
-    height: 70px;
-    padding: 2em;
+  background-color: #fff;
+  height: 70px;
 }
 
 .btn {
-    color: #f60;
-    text-transform: uppercase;
-    /* font-weight: bold; */
-}
-
-.btn, .btn:hover {
-    transition: color 500ms ease;
-}
-
-img {
-    cursor: pointer;
-    width: 64px;
-    height: 64px;
-}
-
-
-
-.built-with {
-    font-size: 0.8em;
-    color: #fff;
-    font-weight: 300;
-    /* padding-right: 2em; */
+  color: #f60;
+  text-transform: uppercase;
 }
 
 .active {
