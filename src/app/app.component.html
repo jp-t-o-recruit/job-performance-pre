@@ -1,1 +1,11 @@
+<div class="container">
+	<div class="online" *ngIf="networkStatus$ | async; else offline">
+		Online 😁
+	</div>
+	<ng-template #offline>
+		<div class="offline">
+			Offline 😎
+		</div>
+	</ng-template>
+</div>
 <app-root-container></app-root-container>

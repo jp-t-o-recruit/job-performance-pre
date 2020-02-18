@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 // import { FormsModule } from '@angular/forms';
 // import { RouterModule } from '@angular/router';
 import { LoginModule } from './login/login.module';
+import { ProductionSummaryComponent } from './production-summary/production-summary.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { LoginModule } from './login/login.module';
     LoginModule
   ],
   declarations: [
+    ProductionSummaryComponent
   ],
   exports: [
     LoginModule
