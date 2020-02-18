@@ -1,14 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
-import { UiModule } from './ui/ui.module';
+import { AppRoutingModule } from './routing/app-routing.module';
 import { ContentModule } from './content/content.module';
+import { UiModule } from './ui/ui.module';
+
+import { AppComponent } from './app.component';
 import { RootContainerComponent } from './root-container/root-container.component';
 
 @NgModule({
