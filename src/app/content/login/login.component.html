@@ -1,1 +1,31 @@
-<input name="hoge">
+<form
+  novalidate
+  #loginForm="ngForm"
+ (submit)="login($event)">
+  <app-label-input
+    [name]="'id'"
+    [label]="'ID:'"
+    [required]="true"
+    [(ngModel)]="id"
+  ></app-label-input>
+
+  {{ id }}
+  <br/>
+
+  <app-label-input
+    [inputType]="'password'"
+    [name]="'password'"
+    [label]="'PW:'"
+    [required]="true"
+    [(ngModel)]="password"
+  ></app-label-input>
+
+  {{ password }}
+
+  <button
+    type="submit"
+    [disabled]="loginForm.invalid">
+    ログイン
+  </button>
+
+</form>

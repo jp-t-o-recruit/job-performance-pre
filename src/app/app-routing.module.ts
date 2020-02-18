@@ -5,8 +5,7 @@ import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'hn/top', pathMatch: 'full' },
-  // { path: 'hn', loadChildren: './content/content.module#ContentModule'},
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', loadChildren: './content/login/login.module#LoginModule'},
   { path: 'content', loadChildren: './content/content.module#ContentModule'},
 ];
