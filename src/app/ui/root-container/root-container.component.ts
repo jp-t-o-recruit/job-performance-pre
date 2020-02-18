@@ -24,18 +24,18 @@ export class RootContainerComponent implements OnInit {
 
   ngOnInit() {
 
-    // this.preload = this.http.get('https://node-hnapi.herokuapp.com/news');
+    // // this.preload = this.http.get('https://node-hnapi.herokuapp.com/news');
 
-    this.feed = this.route.data.switchMap(data => {
-      // return this.data.getFeed(data.feed);
-      return null;
-    });
+    // this.feed = this.route.data.switchMap(data => {
+    //   // return this.data.getFeed(data.feed);
+    //   return null;
+    // });
 
-    this.pages$ = this.feed.map(arr => Math.floor(arr.length / 30) + 1);
+    // this.pages$ = this.feed.map(arr => Math.floor(arr.length / 30) + 1);
 
-    this.items$ = this.currentPage$.switchMap(page => {
-      return this.feed.map(items => items.slice((page - 1) * 30, (page - 1) * 30 + 30));
-    });
+    // this.items$ = this.currentPage$.switchMap(page => {
+    //   return this.feed.map(items => items.slice((page - 1) * 30, (page - 1) * 30 + 30));
+    // });
 
 
   }

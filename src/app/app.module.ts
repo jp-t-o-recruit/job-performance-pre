@@ -22,7 +22,7 @@ import { HelloComponent } from './hello.component.ts';
     BrowserModule,
     ContentModule,
     UiModule,
-    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : [],
+		ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   bootstrap: [AppComponent],
 })
