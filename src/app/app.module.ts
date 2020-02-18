@@ -9,13 +9,11 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { UiModule } from './ui/ui.module';
 import { ContentModule } from './content/content.module';
-import { HelloComponent } from './hello.component.ts';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent,
   ],
   imports: [
     AppRoutingModule,

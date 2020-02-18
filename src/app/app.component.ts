@@ -6,7 +6,7 @@ import { Network } from '@ngx-pwa/offline';
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
-export class AppComponent  {
+export class AppComponent {
   networkStatus$;
   constructor(protected network: Network) {
     this.networkStatus$ = this.network.onlineChanges;
