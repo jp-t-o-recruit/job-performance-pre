@@ -16,7 +16,7 @@ import { LabelInputComponent } from './label-input/label-input.component';
   exports: [
     LoadingSpinnerComponent,
     TopNavComponent,
-    LabelInputComponent
+    LabelInputComponent,
   ]
 })
 export class UiModule {}

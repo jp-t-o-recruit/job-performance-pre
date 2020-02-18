@@ -12,7 +12,7 @@ import { PwaQueueFormComponent } from './pwa-queue-form/pwa-queue-form.component
     CommonModule,
     FormsModule,
     UiModule,
-    RouterModule
+    // RouterModule
   ],
   declarations: [
     ProductionSummaryComponent,
@@ -20,7 +20,7 @@ import { PwaQueueFormComponent } from './pwa-queue-form/pwa-queue-form.component
     LoginComponent
   ],
   exports: [
-    RouterModule
+    // RouterModule
   ]
 })
 export class ContentModule { }

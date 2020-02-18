@@ -3,23 +3,24 @@ import { NgModule } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { environment } from '../environments/environment';
-import { AppRoutingModule } from './routing/app-routing.module';
-import { ContentModule } from './content/content.module';
-import { UiModule } from './ui/ui.module';
+// import { ContentModule } from './content/content.module';
+// import { UiModule } from './ui/ui.module';
+// import { AppRoutingModule } from './routing/app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { RootContainerComponent } from './root-container/root-container.component';
+// import { RootContainerComponent } from './root-container/root-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RootContainerComponent
+    // RootContainerComponent
   ],
   imports: [
-    AppRoutingModule,
+    // AppRoutingModule,
     BrowserModule,
-    ContentModule,
-    UiModule,
+    // ContentModule,
+    // UiModule,
 		ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   bootstrap: [AppComponent],
