@@ -9,12 +9,12 @@ import { AppRoutingModule } from './routing/app-routing.module';
 // import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-// import { RootContainerComponent } from './root-container/root-container.component';
+import { RootContainerComponent } from './root-container/root-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // RootContainerComponent
+    RootContainerComponent
   ],
   imports: [
     AppRoutingModule,

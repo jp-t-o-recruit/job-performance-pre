@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { LoginComponent } from '../content/login/login.component';
 
-// import { ContentRoutingModule } from './content-routing.module';
+import { ContentRoutingModule } from './content-routing.module';
 import { LoginGuard } from './guard/login.guard';
 
 const routes: Routes = [
@@ -17,7 +17,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [
+    ContentRoutingModule,
+    RouterModule.forRoot(routes)
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

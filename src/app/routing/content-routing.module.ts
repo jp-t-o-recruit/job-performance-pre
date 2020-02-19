@@ -11,9 +11,7 @@ export const routes: Routes = [
   { path: 'pwa-queue-form', component: PwaQueueFormComponent
   //  canActivate: [LoginGuard]
     },
-  { path: 'production-summary', component: ProductionSummaryComponent
-  //  canActivate: [LoginGuard]
-    },
+  { path: 'production-summary', component: ProductionSummaryComponent, canActivate: [LoginGuard] },
 ];
 
 @NgModule({
