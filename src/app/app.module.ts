@@ -9,7 +9,7 @@ import { AppRoutingModule } from './routing/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { RootContainerComponent } from './root-container/root-container.component';
-import { CheckForUpdateService } from './service/check-for-update.service';
+import { CheckForUpdateService } from './service/pwa/check-for-update.service';
 
 @NgModule({
   declarations: [

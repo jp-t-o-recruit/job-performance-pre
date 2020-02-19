@@ -1,13 +1,4 @@
-<div class="container">
-	<div class="online" *ngIf="networkStatus$ | async; else offline">
-		Online 😁
-	</div>
-	<ng-template #offline>
-		<div class="offline">
-			Offline 😎
-		</div>
-	</ng-template>
-</div>
+<app-pwa-toolbar></app-pwa-toolbar>
 <app-root-container>
   <router-outlet></router-outlet>
 </app-root-container>

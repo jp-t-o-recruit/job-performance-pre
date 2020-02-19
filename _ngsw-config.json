@@ -1,14 +1,36 @@
 {
+  "TODO:": "コンパイル結果が予期しない動作になるので、一時的にサービスワーカーの実装をしないようファイル名を'_'で変更し対象外にする https://angular.jp/guide/service-worker-devops#%E3%83%95%E3%82%A7%E3%83%BC%E3%83%AB%E3%82%BB%E3%83%BC%E3%83%95",
+
+  
+
 	"$schema": "./node_modules/@angular/service-worker/config/schema.json",
 	"index": "/index.html",
 	"assetGroups": [
 		{
-      "TODO:": "コンパイル結果が予期しない動作になるので、一時サービスワーカーの実装をしない",
+			"name": "app",
+			"installMode": "prefetch",
+			"resources": {
+				"files": ["/favicon.ico", "/index.html", "/manifest.webmanifest", "/*.css", "/*.js"]
+			}
+		},
+		{
 			"name": "assets",
 			"installMode": "lazy",
 			"updateMode": "prefetch",
 			"resources": {
 				"files": ["/assets/**", "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"]
+			}
+		}
+	],
+	"dataGroups": [
+		{
+			"name": "swapi",
+			"urls": ["https://swapi.co/**"],
+			"cacheConfig": {
+				"strategy": "performance",
+				"maxSize": 100,
+				"maxAge": "3d",
+				"timeout": "5s"
 			}
 		}
 	]
