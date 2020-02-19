@@ -8,6 +8,7 @@ import { LabelInputComponent } from './label-input/label-input.component';
 import { UpdateNotificationComponent } from './update-notification/update-notification.component';
 import { PwaToolbarComponent } from './pwa/pwa-toolbar/pwa-toolbar.component';
 import { OnlineStateComponent } from './pwa/online-state/online-state.component';
+import { CheckForUpdateService } from "../service/pwa/check-for-update.service.ts";
 
 @NgModule({
   imports: [CommonModule, FormsModule, RouterModule],
@@ -25,6 +26,9 @@ import { OnlineStateComponent } from './pwa/online-state/online-state.component'
     LabelInputComponent,
     UpdateNotificationComponent,
     PwaToolbarComponent
+  ],
+  providers: [
+    CheckForUpdateService
   ]
 })
 export class UiModule {}

@@ -1,3 +1,7 @@
-<div>
+<div class="d-block p-2" *ngIf="swEnable else swNotingTemplate">
   <app-online-state></app-online-state>
+  <button type="button" (click)="checkState()">チェック</button>
 </div>
+<ng-template #swNotingTemplate>
+  Service Workerが無効です。
+</ng-template>
