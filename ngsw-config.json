@@ -3,30 +3,12 @@
 	"index": "/index.html",
 	"assetGroups": [
 		{
-			"name": "app",
-			"installMode": "prefetch",
-			"resources": {
-				"files": ["/favicon.ico", "/index.html", "/manifest.webmanifest", "/*.css", "/*.js"]
-			}
-		},
-		{
+      "TODO:": "コンパイル結果が予期しない動作になるので、一時サービスワーカーの実装をしない",
 			"name": "assets",
 			"installMode": "lazy",
 			"updateMode": "prefetch",
 			"resources": {
 				"files": ["/assets/**", "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"]
-			}
-		}
-	],
-	"dataGroups": [
-		{
-			"name": "swapi",
-			"urls": ["https://swapi.co/**"],
-			"cacheConfig": {
-				"strategy": "performance",
-				"maxSize": 100,
-				"maxAge": "3d",
-				"timeout": "5s"
 			}
 		}
 	]
