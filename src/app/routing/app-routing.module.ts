@@ -10,9 +10,9 @@ import { ContentRoutingModule } from './content-routing.module';
 import { LoginGuard } from './guard/login.guard';
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: '', component: LoginComponent },
   { path: 'unavailable', component: UnavailableComponent },
+  { path: '', component: LoginComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
   // {
   //   path: 'content',
   //   loadChildren: './content-routing.module#ContentRoutingModule',

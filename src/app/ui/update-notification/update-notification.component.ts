@@ -22,7 +22,7 @@ export class UpdateNotificationComponent implements OnInit {
 				this.showUpdated = true;
 			});
 		}
-	}
+	} 
 
 	doUpdate() {
 		this.showUpdate = false;

@@ -9,6 +9,7 @@ import { AppRoutingModule } from './routing/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { RootContainerComponent } from './root-container/root-container.component';
+import { CheckForUpdateService } from './service/check-for-update.service';
 
 @NgModule({
   declarations: [
@@ -23,5 +24,6 @@ import { RootContainerComponent } from './root-container/root-container.componen
 		ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   bootstrap: [AppComponent],
+  providers: [CheckForUpdateService],
 })
 export class AppModule { }
