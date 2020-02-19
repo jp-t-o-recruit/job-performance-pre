@@ -6,7 +6,6 @@ import { environment } from '../environments/environment';
 import { ContentModule } from './content/content.module';
 import { UiModule } from './ui/ui.module';
 import { AppRoutingModule } from './routing/app-routing.module';
-// import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { RootContainerComponent } from './root-container/root-container.component';
