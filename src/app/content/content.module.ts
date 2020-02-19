@@ -6,6 +6,7 @@ import { UiModule } from '../ui/ui.module';
 import { LoginComponent } from './login/login.component';
 import { ProductionSummaryComponent } from './production-summary/production-summary.component';
 import { PwaQueueFormComponent } from './pwa-queue-form/pwa-queue-form.component';
+import { UnavailableComponent } from './unavailable/unavailable.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { PwaQueueFormComponent } from './pwa-queue-form/pwa-queue-form.component
   declarations: [
     ProductionSummaryComponent,
     PwaQueueFormComponent,
-    LoginComponent
+    LoginComponent,
+    UnavailableComponent
   ],
   exports: [
     RouterModule
