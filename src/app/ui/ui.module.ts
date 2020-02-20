@@ -9,6 +9,7 @@ import { UpdateNotificationComponent } from './update-notification/update-notifi
 import { PwaToolbarComponent } from './pwa/pwa-toolbar/pwa-toolbar.component';
 import { OnlineStateComponent } from './pwa/online-state/online-state.component';
 import { CheckForUpdateService } from "../service/pwa/check-for-update.service.ts";
+import { PairBlockComponent } from './pair-block/pair-block.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, RouterModule],
@@ -18,14 +19,16 @@ import { CheckForUpdateService } from "../service/pwa/check-for-update.service.t
     LabelInputComponent,
     UpdateNotificationComponent,
     PwaToolbarComponent,
-    OnlineStateComponent
+    OnlineStateComponent,
+    PairBlockComponent
   ],
   exports: [
     LoadingSpinnerComponent,
     TopNavComponent,
     LabelInputComponent,
     UpdateNotificationComponent,
-    PwaToolbarComponent
+    PwaToolbarComponent,
+    PairBlockComponent
   ],
   providers: [
     CheckForUpdateService
