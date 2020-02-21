@@ -22,6 +22,8 @@ import { CheckForUpdateService } from './service/pwa/check-for-update.service';
     ContentModule,
     UiModule,
 		ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    // TODO: サービスワーカー機能デバッグのため動作させる
+		// ServiceWorkerModule.register('ngsw-worker.js', { enabled: true }),
   ],
   bootstrap: [AppComponent],
   providers: [CheckForUpdateService],

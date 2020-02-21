@@ -43,11 +43,22 @@ export class CheckForUpdateService {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(function (registrations) {
         for (const registration of registrations) {
-          // unregister service worker
+          // TODO: サービスワーカー消していいかログ出す
           console.log('serviceWorker unregistered', registration);
           // registration.unregister();
         }
       });
     }
+    
+    caches.keys().then(function(keys) {
+        // キャッシュストレージを全て削除する
+        keys.forEach(function(cacheName) {
+            if (cacheName) {
+              // TODO: キャッシュアプリ消していいかログ出す
+              console.log('キャッシュ unregistered', cacheName);
+              // caches.delete(cacheName);
+            }
+        });
+    });
   }
 }
