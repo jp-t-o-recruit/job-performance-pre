@@ -12,7 +12,7 @@ export class PwaToolbarComponent implements OnInit {
 
   constructor(
     private _swUpdate: SwUpdate,
-    private _checkForUpdateService: CheckForUpdateService
+    private _checkForUpdateService: CheckForUpdateService,
   ) {
     this.swEnable = this._swUpdate.isEnabled;
   }
@@ -21,5 +21,9 @@ export class PwaToolbarComponent implements OnInit {
 
   checkState() {
     this._checkForUpdateService.CheckForUpdateService();
+  }
+
+  killServiceWorker() {
+    this._checkForUpdateService.killServiceWorker();
   }
 }
